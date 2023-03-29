@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Angolo verde</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <form action="https://formsubmit.co/matteo24giu@gmail.com" method="POST"> 
+        <div class="scheda">
+            <div class="bottom">
+                <!-- PARTE GRIGIA -->
+                <div class="top">
+                    <!-- BOTTONE -->
+                    <button class="diebutton" onclick="myFunction()">
+                        <p style="font-size: x-large;">+</p>
+                    </button>
+                    <!-- FOTO -->
+                    <img class="foto" src="assets/lenticchie.jpg" alt="foto_profilo">
+                </div>
+                <div class="nascita"> <strong>Lenticchie:</strong>  <br> 18/03/2023</div>
+                <!-- Acqua -->
+                <div class="arrey">
+                    <div class="blocchi">
+                        <h1>Acqua</h1>
+                    </div>
+                    <!-- STATO DELLA PIANTA -->
+                    <div class="blocchi">
+                        <h1>Stato</h1>                  
+                        <label class="container">Verde
+                            <input type="checkbox" name="Stato Pianta VERDE">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Giallo
+                            <input type="checkbox"name="Stato Pianta GIALLO">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Grigio
+                            <input type="checkbox"name="Stato Pianta GRIGIO">
+                            <span class="checkmark"></span>
+                        </label>  
+                        <label class="container">Annaffiato
+                            <input type="checkbox"name="ANNAFFIATO">
+                            <span class="checkmark"></span>
+                        </label>  
+                    </div>
+                </div>
+                <!-- Data -->
+                <input class="inputt" type="date" name="Data di annaffiamento" required><br><br>
+                <!-- INVIO -->
+                <input class="inputt" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

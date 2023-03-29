@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: sans-serif;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+/*SCHEDA*/
+.scheda{
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 20px;
+    padding: 20px;
+    left: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.top{
+    text-align: center;
+    background: rgba(207, 142, 3, 0.377);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+.bottom{
+    background: linear-gradient(126deg, rgb(9, 218, 255) 0%, rgb(111, 230, 32) 100%, rgb(192, 161, 76) 100%);
+    padding-bottom: 30px;
+    border-radius: 10px;
+    
+}
+/*PROFILO*/
+.foto{
+    top: 10px;
+    position: relative;
+    border-radius: 50%;
+    height: 250px;
+    border: 5px solid white;
+}
+.nascita{
+    top: 110px;
+    position: relative;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: auto;
+    
+}
+/*BLOCCHI*/
+.blocchi{
+    top: 0px;
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.arrey{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -60px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*TITOLI*/
+.blocchi h1{
+    margin: 10px;
+    font-size: 30px;
+}
+.blocchi h3{
+    margin: 10px; 
+}
+/*INPUT FORM*/
+.container input {
+    display: none;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*bottone dei deceduti*/
+.diebutton{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: #0aa7ce;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.livebutton{
+    width: 40px;
+    height: 40px;
+    background: #0aa7ce;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+/*INPUT*/
+.inputt{
+    position: relative;
+    border: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.inputt2{
+    position: relative;
+    border: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+/*MEDIA*/
+@media screen and (max-width:480px) {
+    .scheda{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .top{
+        height: 175px;
+    }
+    .foto{
+        margin-left: 20px;
+        top: 10px;
+        height: 150px;
+        border: 3px solid white;
+    }
+    .nascita{
+        top: 20px;
+        width: 50%;
+    }
+    .arrey{
+        display: grid;
+
+    }
+    .blocchi{
+        width: 125%;
+        left: 75px;
+        top: 20px;
+    }
+    /*morti*/
+    .diebutton{
+        left: 85%;
+    }
+    .container{
+        padding-left: 50px;
+    }
+    .inputt{
+        position: relative;
+        top: 80px;
+        text-align: center;
+        margin: auto;
+    }
+    .bottom{
+        height: 580px;
+    }
+}
